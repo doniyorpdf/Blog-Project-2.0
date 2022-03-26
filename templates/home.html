@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bosh sahifa</title>
-</head>
-<body>
 {% extends 'base.html' %}
-
-{% block content%}
-    <h1>Bosh sahifa</h1>
-    <p>Xush kelibsiz</p>
+{% load static %}
+{% block title %}Bosh sahifa{% endblock title %}
+{% block content %}
+<br>
+<div class="jumbotron">
+    <h1 class="display-4">Assalomu alaykum!</h1>
+    <p class="lead">Doniyor Abduhakimovning shaxsiy blogi</p>
+    <hr class="my-4">
+    <p>Bu yerda siz dasturchilarga oid so'nngi yangiliklardan xabardor bo'lib turasiz</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">Postlarni ko'rish</a>
+    </p>
+</div>
 {% endblock content %}
-</body>
-</html>
